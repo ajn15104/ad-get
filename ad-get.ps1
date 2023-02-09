@@ -20,4 +20,4 @@ if (Test-Connection $servicetag -Quiet -Count 1) {
     $online = "offline"
 }
 $wshell = New-Object -ComObject Wscript.Shell
-$wshell.Popup("Ownership and device info: '$desc'`nOU: $OU`nPublic IP: $pubip`n$os build $build`nDevice is $online.",0,"OK",0x0)
+$wshell.Popup("Ownership and device info: '$desc'`nOU: $OU`nPublic IP: $pubip`n$os build $build`nDevice is $online.",0,"Results",0x0)
