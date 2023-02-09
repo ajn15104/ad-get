@@ -2,8 +2,8 @@
 ## Description
 This script returns commonly requested info about computers stored in the UConn local Active Directory. It requires the Remote Server Administration Tools (RSAT) feature to be installed on the host computer. This can be enabled in the Advanced Features section of Windows Settings.
 ## Download ad-get.exe
-1. Click the green **Code** button in the top right corner of the repository homepage and select **Download ZIP**.
-2. In your Downloads folder, extract *ad-get.exe* from the zipped folder. 
+1. Select the newest release from the right-hand side of the repository homepage. 
+2. Choose the **ad-get.exe** asset to download it to your computer.
 ## Usage
 1. Double-click on the executable to open it.
 2. Enter the service tag and hit Enter. Do not enter the full address. For example for computer 4d86zy2.grove.ad.uconn.edu, just enter *4d86zy2*.
