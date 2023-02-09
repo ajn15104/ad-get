@@ -1,2 +1,12 @@
-# uconn-tsc-ps-automation
-Testing and storing scripts that can be used to automate tasks in TSC
+# ad-get.exe
+## Description
+This script returns commonly requested info about computers stored in the UConn local Active Directory. It requires the Remote Server Administration Tools (RSAT) feature to be installed on the host computer. This can be enabled in the Advanced Features section of Windows Settings.
+## Usage
+1. Double-click on the executable to open it.
+2. Enter the service tag and hit Enter. Do not enter the full address. For example for computer 4d86zy2.grove.ad.uconn.edu, just enter *4d86zy2*.
+3. If the service tag is found in Active Directory, a pop-up window will appear in a few seconds with details. If it is not found, it will prompt for a new service tag.
+## Known issues
+- ad-get.exe will not run on macOS. This is because RSAT and the Get-ADComputer PowerShell cmdlet are not available on macOS.
+- For the same reason, ad-get.exe will not run on Windows on ARM. Because of these two incompatibilities, users on Apple silicon-based Macs cannot use ad-get.exe.
+## Future development
+As ITS continues its switch from local Active Directory to Azure AD managed by Microsoft Intune, I would like to update this program to pull information about Intune-enrolled machines.
